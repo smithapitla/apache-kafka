@@ -25,13 +25,13 @@ High Volume
 High Velocity
 High Variety
 
-## Messaging Goals 
+#### Messaging Goals 
 High throughput
 Horizontally scalable
 Reliable and durable
 Loosely coupled producers and consumers.
 Flexible publish-subscribe semantics
-# Why Apache Kafka
+#### Why Apache Kafka
 
 1. High Throughput
 2. Horizontally Scalable
@@ -39,7 +39,7 @@ Flexible publish-subscribe semantics
 4. Loosely Coupled Consumers and Producers
 5. Flexible Publish-Subscribe semantics
 
-# Apache Kafka as a messaging system
+#### Apache Kafka as a messaging system
 
   Producers
   Cluster, Broker, Topics
