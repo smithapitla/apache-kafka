@@ -59,6 +59,18 @@ Controller
 Worker availability and health
 Task redundancy.
 
-Worker becomes leader(for redundancy for task), peers become follower. Quorum. 
+Worker becomes leader(for redundancy for task), peers become follower. One peers have committed to a leader a Quorum is formed. 
+Risk policy to protect against loss is called Replication factor. 
+
+# Consensus or Gossip protocol
+In addition to the message payload, all workers have to communicate with Peers to keep functioning. 
+Worker node membership and naming
+Configuration management
+Leader election
+Health status
+
+# Apache Zooker
+Centralized service 
+
 
 
