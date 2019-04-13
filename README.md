@@ -1,18 +1,21 @@
 # Apache-Kafka
 
-Data rapidly, scalably, reliably(fault-tolerant). 
+Apache Kafka is a high-throughput distributed messaging system. It provides pub-sub messaging infrastructure. 
 
-Apache Kafka is a high-throughput distributed (pub-sub) messaging system. It provides Messaging Infrastructure. 
+#### Technology toolbox 
+  Database replication
+  Log shipping
+  Extract, Transform and Load(ETL)
+  Messaging
+  Custom Middleware
 
-Clients - LinkedIn, Netflix, Uber, AirBnb
-
-Technology toolbox 
-Database replication (Limited to RDMS to RDBMS only, db specific, tight coupling)
-Log shipping (performance, cumbersome)
-Extract, Transform and Load(ETL) (Proprietary and costly, custom development, scalability, performance, required multiple instances)
-Messaging  (Scalability, smaller messages, requires rapid consumption, not fault-tolerant, High volume is problematic, local storage, message build up)
-Custom Middleware magic(Extremely complex, consistency concerns, potentially expensive)
-
+#### Limitations of existing tools in the technology toolbox. 
+  Database replication is limited to RDMS to RDBMS, specific to DB, tight coupling
+  Log shipping has performance limitations and is cumbersome. 
+  ETL is proprietary and costly, needs custom development, not scalable easily, not highly performant, requires multiple instances.
+  Messaging systems are not easily scalable, handle smaller messages, requires rapid consumption, not fault-tolerant, High volume is problematic, local storage, message build up etc.
+  Custom middleware is extremely complex, consistency concerns, potentially expensive
+  
 Multi-write pattern?
 Message-broker pattern?
 
@@ -32,9 +35,9 @@ Flexible publish-subscribe semantics
 
 1. High Throughput
 2. Horizontally Scalable
-Reliable and Durable
-Loosely Coupled Consumers and Producers
-Flexible Publish-Subscribe semantics
+3. Reliable and Durable
+4. Loosely Coupled Consumers and Producers
+5. Flexible Publish-Subscribe semantics
 
 # Apache Kafka as a messaging system
 
