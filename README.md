@@ -2,7 +2,7 @@
 
 Data rapidly, scalably, reliably(fault-tolerant). 
 
-Apache Kafka is a high-throughput distributed messaging system. It provides Messaging Infrastructure. 
+Apache Kafka is a high-throughput distributed (pub-sub) messaging system. It provides Messaging Infrastructure. 
 
 Clients - LinkedIn, Netflix, Uber, AirBnb
 
@@ -35,3 +35,30 @@ Flexible publish-subscribe semantics
 Reliable and Durable
 Loosely Coupled Consumers and Producers
 Flexible Publish-Subscribe semantics
+
+# Apache Kafka as a messaging system
+
+Producers
+Broker, Topics
+Consumers
+
+# Apache Kafka Cluster
+A group of Kafka brokers.
+
+# Apache Zookeeper
+
+# Distributed Systems
+Consistes of multiple workers or nodes(kafka brokers). 
+
+Controller
+
+1. Attendance
+2. Work Items
+3. Status
+
+Worker availability and health
+Task redundancy.
+
+Worker becomes leader(for redundancy for task), peers become follower. Quorum. 
+
+
