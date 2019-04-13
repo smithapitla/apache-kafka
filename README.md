@@ -70,7 +70,8 @@ Leader election
 Health status
 
 # Apache Zooker
-Centralized service 
+Centralized service for maintaining metadata about a cluster of distributed nodes.
+Distributed system consisting of multiple nodes is called an "ensemble"
 
 
 
