@@ -101,6 +101,11 @@ Change Directory to Kafka installation bin directory and enter below command
 To test if zookeeper installation was successful
 ````
 telnet localhost 2181
+````
+````
 stat
 ````
-
+#### Start Kafka Broker
+```
+./zookeeper-server-start.sh ../config/server.properties
+```
