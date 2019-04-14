@@ -88,3 +88,6 @@ Payload(binary)
 
 #### Message Offset
 A placeholder for last read message position. Maintained by Consumer. Corresponds to the message identifier.
+
+#### Message Retention Policy
+It is configuratable in hours. By default it is 168 hours or 7 days. Can be set on a per topic basis. 
