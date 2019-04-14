@@ -77,6 +77,14 @@ Configuration management
 Leader election
 Health status
 
+#### Kafka Topics
+Named feed or category of messages. Its a Logical entity. Physically represented as a log. Topics can span an entire cluster for the benefit of scalability and fault tolerance. Messages are appended to time ordered sequential stream. 
+Maintaining data as events is called Event Sourcing. 
 
+#### Message Content
+Timestamp
+Referenceable identifier
+Payload(binary)
 
-
+#### Message Offset
+A placeholder for last read message position. Maintained by Consumer. Corresponds to the message identifier.
