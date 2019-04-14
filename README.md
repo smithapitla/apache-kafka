@@ -121,6 +121,10 @@ stat
 ```
 ./kafka-topics.sh --list --zookeeper localhost:2181
 ```
+#### View Topic State
+```
+./kafka-topics.sh --describe --topic test-topic --zookeeper localhost:2181
+```
 #### Create a Producer
 ```
 ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
