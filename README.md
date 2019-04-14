@@ -92,6 +92,10 @@ A placeholder for last read message position. Maintained by Consumer. Correspond
 #### Message Retention Policy
 It is configuratable in hours. By default it is 168 hours or 7 days. Can be set on a per topic basis. 
 
+#### Kafka Partitions
+Each topic has one or more partitions. Number of partitions in a topic is configurable. A partition is the basis for which Kafka can Scale, be fault-tolerant, achieve higher levels of throughput. Each partition is maintained on at least one or more brokers.  
+Partition is the physical representation of the topic as a commit log ie partition == Log
+
 # Commands
 #### Start Zookeeper
 Change Directory to Kafka installation bin directory and enter below command 
