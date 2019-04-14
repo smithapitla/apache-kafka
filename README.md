@@ -113,3 +113,7 @@ stat
 ```
 ./kafka-topics.sh --create --topic test-topic --zookeeper localhost:2181 --replication-factor 1 --partitions 1
 ```
+#### List Topics
+```
+./kafka-topics.sh --list --zookeeper localhost:2181
+```
