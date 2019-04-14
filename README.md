@@ -109,3 +109,7 @@ stat
 ```
 ./zookeeper-server-start.sh ../config/server.properties
 ```
+#### Create a Topic
+```
+./kafka-topics.sh --create --topic test-topic --zookeeper localhost:2181 --replication-factor 1 --partitions 1
+```
