@@ -91,3 +91,16 @@ A placeholder for last read message position. Maintained by Consumer. Correspond
 
 #### Message Retention Policy
 It is configuratable in hours. By default it is 168 hours or 7 days. Can be set on a per topic basis. 
+
+# Commands
+#### Start Zookeeper
+Change Directory to Kafka installation bin directory and enter below command 
+````
+./zookeeper-server-start.sh ../config/zookeeper.properties
+````
+To test if zookeeper installation was successful
+````
+telnet localhost 2181
+stat
+````
+
