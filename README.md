@@ -111,7 +111,7 @@ stat
 ````
 #### Start Kafka Broker
 ```
-./zookeeper-server-start.sh ../config/server.properties
+./kafka-server-start.sh ../config/server.properties
 ```
 #### Create a Topic
 ```
