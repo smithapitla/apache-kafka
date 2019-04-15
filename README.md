@@ -133,3 +133,20 @@ stat
 ```
 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
 ```
+
+# Producer Internals
+
+POM dependency needed for adding Kafka to our project. 
+```
+    <dependency>
+  		<groupId>org.apache.kafka</groupId>
+  		<artifactId>kafka-clients</artifactId>
+  		<version>0.10.0.1</version>
+  	</dependency>
+```
+
+Important classes to look at within kafka-clients
+```
+KafkaProduder
+ProducerRecord
+```
