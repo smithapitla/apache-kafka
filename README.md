@@ -150,3 +150,31 @@ Important classes to look at within kafka-clients
 KafkaProduder
 ProducerRecord
 ```
+```
+package kafka;
+
+import java.util.Properties;
+import java.util.concurrent.Future;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
+import org.apache.kafka.clients.producer.RecordMetadata;
+
+public class KafkaProducerApp {
+
+	public static void main(String[] args) {
+		Properties props = new Properties();
+		props.put("bootstrap.servers", "localhost:9092");
+		props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+		
+		KafkaProducer myProducer = new KafkaProducer(props);
+		ProducerRecord myMessage = new ProducerRecord("replicated-topic", "test message", "Sending this from java");
+		
+		Future<RecordMetadata> myFuture = myProducer.send(myMessage);
+
+	}
+
+}
+```
